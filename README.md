@@ -5,7 +5,7 @@
 **Dataset:** Data Set folder has 6 csv files. Please use the data dictionary (images folder) to understand the dataset and then develop your approach to perform below analytics.
 
 **Analytics:** 
-a.	Application should perform below analysis and store the results for each analysis.
+Application should perform below analysis and store the results for each analysis.
 1.	Analytics 1: Find the number of crashes (accidents) in which number of males killed are greater than 2?
 2.	Analysis 2: How many two wheelers are booked for crashes? 
 3.	Analysis 3: Determine the Top 5 Vehicle Makes of the cars present in the crashes in which driver died and Airbags did not deploy.
@@ -23,4 +23,22 @@ a.	Application should perform below analysis and store the results for each anal
 3.	Input data sources and output should be config driven
 4.	Code should be strictly developed using Data Frame APIs (Do not use Spark SQL)
 5.	Share the entire project as zip or link to project in GitHub repo.
+
+**Runbook**
+
+Clone the repo and follow these steps:
+Step 1: Extract the Data.zip file in **BCG_Case_Study_Car_Crash** directory.
+Step 2 : Go to the Project Directory: $ **cd BCG_Case_Study_Car_Crash**
+Step 3 : On terminal, run **python3 setup.py bdist_egg** (It will bundle/package all the python packages(each jobs and utils) in a single `.egg` file.)
+Step 4 : Run **spark-submit --master "local[*]" --py-files dist/bcg-0.0.1-py3.12.egg main.py** and get the output.
+
+**Alternate way to run:**
+
+Clone the repo and follow these steps:
+Step 1: Extract the Data.zip file in **BCG_Case_Study_Car_Crash** directory.
+Step 2: Go to the Project Directory: $ **cd BCG_Case_Study_Car_Crash**
+Step 3: On terminal, run $ **make help** (Get list of make commands to build and run this job)
+Step 4: Run $ make prep_to_run (help to Unzip the data)
+Step 5: Run $ make build (It will bundle/package all the python packages(each jobs and utils) in a single `.egg` file.)
+Step 6: Run **spark-submit --master "local[*]" --py-files dist/bcg-0.0.1-py3.12.egg main.py** and get the output.
 
