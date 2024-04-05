@@ -11,7 +11,7 @@ endef
 export PRINT_HELP_PYSCRIPT
 
 help: ## Get list of make commands to build and run this job
-	@printf -- "Make commands for BCG case Study\n"
+	@printf -- "Make commands for case Study\n"
 	@python3 -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
 prep_to_run: ## Unzip the data
