@@ -1,4 +1,4 @@
-# BCG_Case_Study_Car_Crash
+# Car_Crash_Case_Study
 
 **Case Study:** Vehicle Accidents across US for brief amount of time.
 
