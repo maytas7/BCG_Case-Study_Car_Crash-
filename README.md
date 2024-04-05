@@ -30,7 +30,7 @@ Clone the repo and follow these steps:
 Step 1: Extract the Data.zip file in `Case_Study_Car_Crash` folder/directory                
 Step 2 : Go to the Project Directory: `$ cd Case_Study_Car_Crash`                                 
 Step 3 : On terminal, run `python3 setup.py bdist_egg` (It will bundle/package all the python packages(each jobs and utils) in a single `.egg` file.)              
-Step 4 : Run `spark-submit --master "local[*]" --py-files dist/bcg-0.0.1-py3.12.egg main.py` and get the output.                       
+Step 4 : Run `spark-submit --master "local[*]" --py-files dist/car_crash-0.0.1-py3.12.egg main.py` and get the output.                       
 
 **Alternate way to run:**
 
@@ -40,5 +40,5 @@ Step 2: Go to the Project Directory: `$ cd Case_Study_Car_Crash`
 Step 3: On terminal, run `$ make help` (Get list of make commands to build and run this job)                 
 Step 4: Run `$ make prep_to_run` (help to Unzip the data)                                                      
 Step 5: Run `$ make build` (It will bundle/package all the python packages(each jobs and utils) in a single `.egg` file.)                                               
-Step 6: Run `spark-submit --master "local[*]" --py-files dist/bcg-0.0.1-py3.12.egg main.py` and get the output.                                       
+Step 6: Run `spark-submit --master "local[*]" --py-files dist/car_crash_case_study-0.0.1-py3.12.egg main.py` and get the output.                                       
 
